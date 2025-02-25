@@ -1,6 +1,6 @@
-# BAJAR Sadaai
+# Bajar Sadaai
 
-BAJAR Sadaai is a mobile application that delivers fresh fruits and vegetables directly from farmers to consumers. The app aims to support local farmers by providing a platform to sell their produce directly to end-users, ensuring fresh, quality products for consumers while promoting fair trade practices.
+Bajar Sadaai is a mobile application that delivers fresh fruits and vegetables directly from farmers to consumers. The app aims to support local farmers by providing a platform to sell their produce directly to end-users, ensuring fresh, quality products for consumers while promoting fair trade practices.
 
 ## 📲 Features
 - **Field Team Operations:** Field team members check product quality, purchase from farmers, and send produce to the central team.
@@ -27,14 +27,26 @@ git clone https://github.com/fiftee15n/BAJAR-Sadaai.git
 cd BAJAR-Sadaai
 ```
 
-3. **Install dependencies:**
+3. **Install Flutter dependencies:**
 ```bash
-npm install
+flutter pub get
 ```
 
-4. **Start the development server:**
+4. **Run the app on an emulator or connected device:**
 ```bash
-npm start
+flutter run
+```
+
+5. **For web development:**
+```bash
+flutter run -d chrome
+```
+
+6. **Build the app for production:**
+```bash
+flutter build apk
+# or for iOS
+tflutter build ios
 ```
 
 ## 🛠️ Usage
@@ -49,7 +61,7 @@ npm start
 2. **Create your feature branch:** `git checkout -b feature/AmazingFeature`
 3. **Commit your changes:** `git commit -m 'Add some AmazingFeature'`
 4. **Push to the branch:** `git push origin feature/AmazingFeature`
-5. **Open a pull request**
+5. **Open a pull request`
 
 ## 📄 License
 This project is licensed under the MIT License.
