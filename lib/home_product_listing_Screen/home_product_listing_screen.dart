@@ -100,3 +100,29 @@ PreferredSizeWidget _buildAppBar(BuildContext context){
     ],
   );
 }
+
+ Widget_buildGreetingSection(BuildContext context){
+
+  return Container(
+    width: double.maxFinite,
+    padding: EdgeInsets.only(
+      left: 44.h,
+      top: 4.h,
+      bottom: 4.h,
+    ),
+    decoration: AppDecoration.outlineGray9001,
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(height: 2.h),
+        Text("Hi, Jahangir Alam Tamal",
+        style: theme.textTheme.bodyMedium,
+        )
+      ],
+    ),
+  );
+ }
+
+ 
