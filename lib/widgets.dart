@@ -1278,8 +1278,8 @@ key: key,
 final double? height;
 final double? width;
 final String? imagePath;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
 
 @override
 Widget build(BuildContext context) {
@@ -1287,67 +1287,72 @@ return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: InkWell(
 onTap: () {
-},
 onTap?.call();
+},
 child: CustomImageView(
 imagePath: imagePath!,
 height: height ?? 20.h,
 width: width ?? 20.h,
 fit: BoxFit.contain,
 ),
+),
 );
 }
-```
+
 class AppbarSubtitle extends StatelessWidget {
 AppbarSubtitle({Key? key, required this.text, this.onTap, this.margin})
 : super(
 key: key,
 );
 final String text;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
-```
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: GestureDetector(
 onTap: () {
-},
 onTap?.call();
+},
 child: Text(
 text,
 style: CustomTextStyles.titleLargeGray900.copyWith(
-),
 color: appTheme.gray900,
+),
+),
 ),
 );
 }
-```
+
 class AppbarSubtitleOne extends StatelessWidget {
 AppbarSubtitleOne({Key? key, required this.text, this.onTap, this.margin})
 : super(
 key: key,
 );
 final String text;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
-```
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: GestureDetector(
 onTap: () {
-},
 onTap?.call();
+},
 child: Text(
 text,
 style: CustomTextStyles.titleMediumArchivoGray90018.copyWith(
 color: appTheme.gray900,
 ),
+),
+),
 );
 }
+
 class AppbarSubtitleThree extends StatelessWidget {
 AppbarSubtitleThree({Key? key, required this.text, this.onTap, this.margin})
 : super(
@@ -1356,6 +1361,7 @@ key: key,
 final String text;
 final Function? onTap;
 final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
@@ -1369,17 +1375,20 @@ text,
 style: CustomTextStyles.bodySmall0nError.copyWith(
 color: theme.colorScheme.onError,
 ),
+),
+),
 );
 }
-}
+
 class AppbarSubtitleTwo extends StatelessWidget {
-AppbarSubtitleTwo({Key? kay, required this.text, this.onTap, this.margin})
+AppbarSubtitleTwo({Key? key, required this.text, this.onTap, this.margin})
 : super(
 key: key,
 );
 final String text;
 final Function? onTap;
 final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
@@ -1390,12 +1399,14 @@ onTap?.call();
 },
 child: Text(
 text,
-style: CustonTextStyles.titleSmallGreen888.copyWith(
+style: CustomTextStyles.titleSmallGreen888.copyWith(
 color: appTheme.green888,
+),
+),
 ),
 );
 }
-}
+
 class AppbarTitle extends StatelessWidget {
 AppbarTitle({Key? key, required this.text, this.onTap, this.margin})
 : super(
@@ -1404,6 +1415,7 @@ key: key,
 final String text;
 final Function? onTap;
 final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
@@ -1414,22 +1426,23 @@ onTap?.call();
 },
 child: Text(
 text,
-style: theme.textTheme.titleLargel.copyWith(
+style: theme.textTheme.titleLarge.copyWith(
 color: appTheme.blueGray988,
 ),
 ),
 ),
 );
 }
-}
+
 class AppbarTitleSearchview extends StatelessWidget {
-AppbarTitleSearchview((Key? key, this.hintText, this.controller, this.margin))
+AppbarTitleSearchview({Key? key, this.hintText, this.controller, this.margin})
 : super(
-);
 key: key,
+);
 final String? hintText;
 final TextEditingController? controller;
 final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
@@ -1445,6 +1458,7 @@ right: 6.h,
 bottom: 4.h,
 ),
 ),
+),
 );
 }
 }
@@ -1458,32 +1472,33 @@ this.width,
 this.onTap,
 this.margin})
 : super(
-);
 key: key,
+);
 final double? height;
 final double? width;
 final String? imagePath;
 final Function? onTap;
 final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: GestureDetector(
 onTap: () {
-},
 onTap?.call();
+},
 child: CustomIconButton(
 height: height ?? 36.h,
 width: width ?? 36.h,
 padding: EdgeInsets.all(6.h),
-decoration: iconButtonStyleHelper.outlineGray,
+decoration: IconButtonStyleHelper.outlineGray,
 child: CustomImageView(
 imagePath: ImageConstant.imgCart,
 ),
 ),
+),
 );
-}
 }
 
 class AppbarTrailingIconButtonOne extends StatelessWidget {
@@ -1495,33 +1510,36 @@ this.width,
 this.onTap,
 this.margin})
 : super(
-);
 key: key,
+);
 final double? height;
 final double? width;
 final String? imagePath;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: GestureDetector(
 onTap: () {
-},
 onTap?.call();
+},
 child: CustomIconButton(
 height: height ?? 36.h,
 width: width ?? 36.h,
 padding: EdgeInsets.all(8.h),
-decoration: iconButtonStyleHelper.nome,
+decoration: IconButtonStyleHelper.none,
 child: CustomImageView(
-),
 imagePath: ImageConstant.imgFrame,
+),
+),
 );
 }
-class AppbarTrailingIconbuttonOneOne extends Statelesswidget {
-AppbarTrailingIconbuttonOneOne(
+
+class AppbarTrailingIconButtonOneOne extends StatelessWidget {
+AppbarTrailingIconButtonOneOne(
 {Key? key,
 this.imagePath,
 this.height,
@@ -1534,27 +1552,30 @@ key: key,
 final double? height;
 final double? width;
 final String? imagePath;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: GestureDetector(
 onTap: () {
-},
 onTap?.call();
+},
 child: CustomIconButton(
 height: height ?? 36.h,
 width: width ?? 36.h,
 padding: EdgeInsets.all(6.h),
-decoration: iconButtonStyleHelper.outlineGray,
+decoration: IconButtonStyleHelper.outlineGray,
 child: CustomImageView(
-),
 imagePath: ImageConstant.imgCart,
+),
+),
 );
 }
-class AppbarTrailingImage extends Statelesswidget {
+
+class AppbarTrailingImage extends StatelessWidget {
 AppbarTrailingImage(
 {Key? key,
 this.imagePath,
@@ -1566,23 +1587,25 @@ this.margin})
 key: key,
 );
 final double? height;
-Final double? width;
+final double? width;
 final String? imagePath;
-Final Function? onTap;
-Final EdgeInsetsGeometry? margin;
+final Function? onTap;
+final EdgeInsetsGeometry? margin;
+
 @override
 Widget build(BuildContext context) {
 return Padding(
 padding: margin ?? EdgeInsets.zero,
 child: InkWell(
 onTap: () {
-  onTap?.call();
+onTap?.call();
 },
 child: CustomImageView(
 imagePath: imagePath!,
 height: height ?? 20.h,
 width: width ?? 20.h,
 fit: BoxFit.contain,
+),
 ),
 );
 }
@@ -1603,13 +1626,14 @@ key: key,
 );
 
 final double? height;
-Final ShapeBorder? shape;
-Final Style? styleType;
-Final double? leadingWidth;
-Final Widget? leading;
-Final Widget? title;
+final ShapeBorder? shape;
+final Style? styleType;
+final double? leadingWidth;
+final Widget? leading;
+final Widget? title;
 final bool? centerTitle;
-Final List<Widget>? actions;
+final List<Widget>? actions;
+
 @override
 Widget build(BuildContext context) {
 return AppBar(
@@ -1627,148 +1651,165 @@ centerTitle: centerTitle ?? false,
 actions: actions,
 );
 }
-```
+
 @override
-Size get preferredSize> Size(
-);
+Size get preferredSize => Size(
 SizeUtils.width,
 height ?? 56.h,
-getStyle() (
-switch (styleType) (
-case Style.bgFillwhiteA700:
+);
+
+Widget? getStyle() {
+switch (styleType) {
+case Style.bgFillWhiteA700:
 return Container(
 height: 56.h,
 width: 374.h,
 decoration: BoxDecoration(
-color: app Theme.whiteA788,
+color: appTheme.whiteA700,
 ),
 );
 default:
 return null;
-// ignore_for file: must be _insutable
-class CustomBottomBar extends Statefulwidget (
 }
-CustomBottonBar((this.onChanged));
-Function (Bottom Barenus)? onChanged;
+}
+}
+
+class CustomBottomBar extends StatefulWidget {
+CustomBottomBar({this.onChanged});
+
+Function(BottomBarEnum)? onChanged;
+
 @override
-CustomBottonBarState createState() -> CustosBottomBarState();
-// ignore_for_file: must be _issutable
-class CustomBottom BarState extends State CustomBottonBar> (
+CustomBottomBarState createState() => CustomBottomBarState();
+}
+
+class CustomBottomBarState extends State<CustomBottomBar> {
 int selectedIndex = 0;
-List BottomMenuModel bottomMenulist - [
+
+List<BottomMenuModel> bottomMenuList = [
 BottomMenuModel(
-),
-icon: ImageConstant.ingNavHome,
-activeIcon: ImageConstant.ingNavHone,
+icon: ImageConstant.imgNavHome,
+activeIcon: ImageConstant.imgNavHome,
 title: "Home",
-type: Botto BarEnum.Home,
-BottomMenuModel(
+type: BottomBarEnum.Home,
 ),
-icon: ImageConstant.ingNavDeals,
-activeIcon: ImageConstant.ingNavDeals,
+BottomMenuModel(
+icon: ImageConstant.imgNavDeals,
+activeIcon: ImageConstant.imgNavDeals,
 title: "Deals",
-type: BottosBarEnum.Deals,
-BottomMenuModel(
+type: BottomBarEnum.Deals,
 ),
-icon: ImageConstant.ingNavSearch,
-activeIcon: ImageConstant.ingNavSearch,
+BottomMenuModel(
+icon: ImageConstant.imgNavSearch,
+activeIcon: ImageConstant.imgNavSearch,
 title: "Search",
-type: Botto BarEnum.Search,
-BottomMenuModel(
+type: BottomBarEnum.Search,
 ),
-icon: ImageConstant.ingNavCart,
-activeIcon: ImageConstant.ingNavCart,
+BottomMenuModel(
+icon: ImageConstant.imgNavCart,
+activeIcon: ImageConstant.imgNavCart,
 title: "Cart",
 type: BottomBarEnum.Cart,
+),
 BottomMenuModel(
-icon: ImageConstant.ingNavAccount,
-activeIcon: ImageConstant.ingNavAccount,
+icon: ImageConstant.imgNavAccount,
+activeIcon: ImageConstant.imgNavAccount,
 title: "Account",
-type: Botto BarEnum.Account,
-)
+type: BottomBarEnum.Account,
+),
 ];
+
 @override
-Widget build(BuildContext context) (
+Widget build(BuildContext context) {
 return Container(
 decoration: BoxDecoration(
-color: appTheme.whiteA788,
+color: appTheme.whiteA700,
 boxShadow: [
 BoxShadow(
-color: app Theme.gray900.witWalues(
-),
-alpha: 0.09,
+color: appTheme.gray900.withOpacity(0.09),
 spreadRadius: 2.h,
-blurRadius: 2.,
+blurRadius: 2.h,
 offset: Offset(
-  0,
-  2,
+0,
+2,
 ),
 ),
 ],
 ),
-
-
-class ButtonNavigationBar {
-  backgroundColor: colors.transparent,
-  showSelectedLabels: false,
-  showUnselectedLabels: false,
-  selectedFontSize: 14,
-  unselectedFontSize: 14,
-  currentIndex: selectedIndex,
-  type: BottomNavigationBarType.fixed,
-  items: bottomNavigationList.map((item) {
-    return BottomNavigationBarItem(
-      icon: Icon(item.icon),
-      label: item.title ?? '',
-      activeIcon: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Icon(
-            bottomNavigationList[index].icon,
-            size: 24,
-            color: theme.colorScheme.primary,
-          ),
-          Text(
-            bottomNavigationList[index].title ?? '',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.primary,
-            ),
-          ),
-        ],
-      ),
-    );
-  }).toList(),
-  onTap: (index) {
-    setState(() {});
-  },
+child: BottomNavigationBar(
+backgroundColor: Colors.transparent,
+showSelectedLabels: false,
+showUnselectedLabels: false,
+selectedFontSize: 14,
+unselectedFontSize: 14,
+currentIndex: selectedIndex,
+type: BottomNavigationBarType.fixed,
+items: bottomMenuList.map((item) {
+return BottomNavigationBarItem(
+icon: CustomImageView(
+imagePath: item.icon,
+height: 24.h,
+width: 24.h,
+color: appTheme.gray400,
+),
+label: item.title ?? '',
+activeIcon: Column(
+mainAxisSize: MainAxisSize.min,
+crossAxisAlignment: CrossAxisAlignment.center,
+children: [
+CustomImageView(
+imagePath: item.activeIcon,
+height: 24.h,
+width: 24.h,
+color: theme.colorScheme.primary,
+),
+Text(
+item.title ?? '',
+style: theme.textTheme.bodySmall?.copyWith(
+color: theme.colorScheme.primary,
+),
+),
+],
+),
+);
+}).toList(),
+onTap: (index) {
+setState(() {
+selectedIndex = index;
+});
+widget.onChanged?.call(bottomMenuList[index].type);
+},
+),
+);
+}
 }
 
-// Ignore for file-level non-immutable
-class ButtonNavigationItem {
-  ButtonNavigationItem({
-    required this.icon,
-    required this.title,
-    this.type,
-  });
+class BottomMenuModel {
+BottomMenuModel({
+required this.icon,
+required this.activeIcon,
+required this.title,
+required this.type,
+});
 
-  String? icon;
-  String title;
-  String? type;
+String icon;
+String activeIcon;
+String title;
+BottomBarEnum type;
 }
 
 class DefaultWidget extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
-      padding: EdgeInsets.all(10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Please replace the respective Widget here.
-        ],
-      ),
-    );
-  }
+@override
+Widget build(BuildContext context) {
+return Container(
+color: Colors.red,
+padding: EdgeInsets.all(10),
+child: Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: [
+],
+),
+);
+}
 }
 
