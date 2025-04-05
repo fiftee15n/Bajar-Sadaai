@@ -17,8 +17,9 @@ class AppNavigationScreen extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                decoration: const BoxDecoration(),
-                color: const Color(0xFFFFFFFF),
+                decoration: const BoxDecoration(
+                  color: Color(0xFFFFFFFF), // Moved color here
+                ),
                 child: Column(
                   children: [
                     SizedBox(height: 10.h),
@@ -39,7 +40,7 @@ class AppNavigationScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: const Text(
-                        "Check your app's UI from the below demo screens of your app.",
+                        "Check Bajar Sadaai UI from the below demo screens of your app.",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color(0xFF888888),
